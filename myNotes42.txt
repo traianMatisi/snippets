@@ -1,0 +1,34 @@
+42 piscine
+
+[ Shell00 ]
+
+
+
+	[ ex00 ]
+	The objective is to learn how to create a file with TOUCH, how to append text in it, and how to display the appened content
+		...$ touch [ FILENAME ].[ EXTENSION ]
+		...$ echo [ ASCII TEXT CONTENT]  >> [ CHOSEN FILENAME ]
+		...$ cat [ CHOSEN FILENAME ]
+
+	The above will do the following:
+		--> touch will create an empty file
+		--> echo will make (buff) some string and the >> redirects for the inside of the chosen file
+		--> cat will show the file content
+
+
+	[ ex01 ]
+	The objective is to learn how to modify files permissions wit CHMOD and the time stamps with TOUCH. Also, see the file size
+		...$ chmod [ BINARY ARG FOR PERMISSION ] [ FILE NAME ]
+		...$ echo [ SOME STRING WITH DESIRED BYTES ] >> [ FILE NAME ]
+		...$ touch -t [ TIME STAMP NUMBERS CCYYMMDDHHMM.SS ]
+
+		Once we are done, we'll create a compressed tar file
+
+		...$ tar -cf testShell00.tar testShell00
+
+		The above wil do the following
+		--> chmod will change the permission string dwrxwrxwrx; w=4, r=2, x=1, sum the desired permissions to get the number argument
+		--> Alternatively we can use the target subject with u=user, g=group, o=owner and equates with +wrx or -wrx (e.g. u=+rx)
+		--> The -t flag will touch the TIME
+		--> The -c flag is for creating an tar 'AR'chive, the -f flag is for the 'F'ilename, so -cf means "create regular file"
+

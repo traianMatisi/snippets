@@ -1,3 +1,20 @@
+
+# How to install pygame in linux
+# sudo apt install python3-pip
+# sudo apt install python3-pygame
+
+'''
+Coment1
+'''
+
+"""
+Comment2
+"""
+
+#Comment3
+
+
+#########################################################
 import sys
 import pygame
 import random
