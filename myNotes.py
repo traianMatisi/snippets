@@ -13,6 +13,15 @@ Comment2
 
 #Comment3
 
+"""
+[print function]
+    --> print("your string here")
+    --> print('another string')
+    --> print("""
+    multi
+    line
+    string""")
+"""
 
 #########################################################
 import sys
