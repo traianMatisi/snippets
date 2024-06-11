@@ -1,3 +1,8 @@
+# More ascii art at http://ascii.co.uk/art
+#
+# Adventure treasure - 100 days of python - day 3
+# Author: Traian 11-6-24
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -23,4 +28,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
+choice = input("You're in a crossroad, choose a path, left or right:\n").lower()
 
+if choice == 'l':
+    choice = input("You come to a lake\nDo you want to swim or wait for a boat to arrive?\n").lower()
+    if choice == 'w':
+        choice = input("You come to a alley with 3 doors, yellow, blue and red. Choose one:\n").lower()
+        if choice == 'y':
+            print("You found the treasure!")
+        elif choice == 'b':
+            print("You got eaten by feral beasts!\nGame Over")
+        elif choice == 'r':
+            print("You got burned by fire!\nGame Over")
+        else:
+            print("Game Over!!!")
+    else:
+        print("You got attacked by a Trout\nGame Over")
+else:
+    print("You fell into a hole.\nGame Over")
