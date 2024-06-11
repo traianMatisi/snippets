@@ -1,4 +1,5 @@
-# * Author: Traian
+# Print function tutorial
+# Author: Traian 7-6-24
 
 print("Day 1 - Python Print Function")
 print("The function is declared like this:")
