@@ -1,4 +1,4 @@
-# Bod Mass Index
+# Body Mass Index 1.0
 # Author: Traian 9-6-24
 
 height = float(input("Please, type your height in meters: "))
