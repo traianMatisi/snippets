@@ -71,5 +71,9 @@ print(password_true)
 #shuffle(password_while_string)
 shuffle(password_for_list)
 
+final_password = ""
+for i in password_for_list:
+    final_password += i
+
 print("While shuffled = TypeError: 'str' object does not support item assignment")
-print("For shuffled = ", password_for_list)
+print("For shuffled = ", final_password)
