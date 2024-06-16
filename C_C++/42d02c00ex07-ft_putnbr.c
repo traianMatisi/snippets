@@ -15,10 +15,18 @@ void ft_putnbr(int nb){
         
         write(1, &n[i], 1);
     }
-    
-
-
 
     write(1, "\n", 1);
 
 }
+// MAIN.C //
+/*
+#include "ft_putnbr.c"
+
+void ft_putnbr(int nb);
+
+int main(void){
+    ft_putnbr(42);
+    return 0;
+}
+ */
