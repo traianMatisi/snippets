@@ -14,7 +14,7 @@ public class Fase {
 	}
 
 	public static Fase criarFase(NomeFases nomeFases, int numPersonagens) {
-		Fase fase = new Fase(nomeFases, numPersonagens);// TODO Auto-generated method stub
+		Fase fase = new Fase(nomeFases, numPersonagens);
 		return fase;
 	}
 

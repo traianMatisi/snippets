@@ -18,4 +18,5 @@ int main(void){
     printf("Media = %.1f\n", media/N);
     
     return 0;
+    
 }
