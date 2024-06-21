@@ -284,4 +284,4 @@
 ####################################################################################################
 
 
-print("Abra o código fonte para acessar os links das atividades e os códigos escritos.")
+print("\nAbra o código fonte para acessar os links das atividades e os códigos escritos.")
