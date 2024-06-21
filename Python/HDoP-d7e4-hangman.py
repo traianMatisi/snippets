@@ -4,9 +4,9 @@
 from time import sleep
 from random import choice
 import os
-from hangman_resources import word_list
-from hangman_resources import hanger
-from hangman_resources import logo
+from snippets.Python.resources.hangman import word_list
+from .resources.hangman import hanger
+from resources.hangman import logo
 
 game = True
 while game:

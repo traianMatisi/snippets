@@ -4,34 +4,31 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def main():
-    #direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-    #text = input("Type your message:\n").lower()
-    text = "Hello".lower()
-    #shift = int(input("Type the shift number:\n"))
-    shift = 3
+    text = "hello, world!".lower()
+    shift = 5
+
     print(text)
-    #if direction == "encode":
-    text = encrypt(text = text, shift = shift)
+    text = encrypt(text, shift)
     print(text)
-    #elif direction == "decode":
-    text = decrypt(text = text, shift = shift)
+    text = decrypt(text, shift)
     print(text)
 
 def encrypt(text, shift):
     cipher_text = ""
     for i in range(len(text)):
-        cipher_text += alphabet.index(text[i])
-    text = cipher_text
-    return text
+        if text[i] in alphabet:
+            cipher_text += alphabet[alphabet.index(text[i]) + shift]
+        else:
+            cipher_text += text[i]
+    return cipher_text
+
 def decrypt(text, shift):
     cipher_text = ""
     for i in range(len(text)):
-        cipher_text += alphabet.index(text[i])
-    text = cipher_text
-    return text
+        if text[i] in alphabet:
+            cipher_text += alphabet[alphabet.index(text[i]) - shift]
+        else:
+            cipher_text += text[i]
+    return cipher_text
 
-    ##HINT: How do you get the index of an item in a list:
-    #https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list
-
-    ##🐛Bug alert: What happens if you try to encode the word 'civilization'?🐛
 main()
