@@ -27,7 +27,7 @@ Exemplos
 int main(){
     double velocidade, espaco, tempo;
     scanf("%lf %lf", &tempo, &velocidade);
-    espaco = velocidade / tempo;    
+    espaco = velocidade * tempo;    
     printf("%.3lf\n", espaco / 12.0);    
     return 0;
 }
