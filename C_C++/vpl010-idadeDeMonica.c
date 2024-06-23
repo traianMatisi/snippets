@@ -36,19 +36,24 @@ Exemplo de saída 2
 #include <stdio.h>
 
 int main(){
-    int monica, filho_a, filho_b;;
+    int monica, filho_a, filho_b, filho_c;
     do{
-        printf("Idade Monica");
+        printf("Idade Monica --> ");
         scanf("%i", &monica);
-    }while(!(monica >= 40 && monica <= 110));
+    }while(monica < 40 || monica > 110);
     do{
-        printf("Idade filho A");
+        printf("Idade filho A --> ");
         scanf("%i", &filho_a);
     }while(filho_a >= monica);
     do{
-        printf("Idade filho B");
+        printf("Idade filho B --> ");
         scanf("%i", &filho_b);
-    }while(filho_a >= monica);
-    printf("%i\n", monica);
+    }while(filho_b >= monica && filho_b == filho_a);
+    filho_c = monica - filho_a - filho_b;
+    printf("Monica: %i\nFilho A: %i\nFilho B: %i\nFilho C: %i\n", monica, filho_a, filho_b, filho_c);
+    printf("Filho mais velho --> ");
+    if (filho_a > filho_b && filho_a > filho_c) printf("%i", filho_a);
+    else if(filho_b > filho_c) printf("%i", filho_b);
+    else printf("%i", filho_c);
     return 0;
 }
