@@ -11,7 +11,7 @@ my_string = "Traian Matisi de Lima Vaz"
 first_name = "Traian"
 last_name = "Matisi"
 
-#print("Slice [5:15:2] => ", my_string[5:15:2])
+print("Slice [5:15:2] => ", my_string[5:15:2])
 print("str_a + str_b, sep='@', end='#' => ", first_name, last_name, sep = '@', end = '#')
 print("len(my_string) = ", len(my_string))
 print(".swapcase()", my_string.swapcase())
@@ -22,11 +22,11 @@ print(".capitalize()", my_string.capitalize())
 print(".title()", my_string.title())
 print(".encode()", my_string.encode())
 print("", my_string.count('a'))
-#print("", my_string.find('ian')) # also L and R
-#print("", my_string.index('ian')) # also L and R
+print("", my_string.find('ian')) # also L and R
+print("", my_string.index('ian')) # also L and R
 print("", my_string.strip()) # also L and R
-#print("", my_string.replace('ian', 'yain'))
-#print("", my_string.replace('a', ' '))
+print("", my_string.replace('ian', 'yain'))
+print("", my_string.replace('a', ' '))
 print("", my_string.split(" ")) # also L and R
 print("", my_string.join("~"))
 
@@ -37,15 +37,15 @@ class str(object=b'', encoding='utf-8', errors='strict')
 str.capitalize()
 str.casefold()
 str.center(width[, fillchar])
-#str.count(substr[, start[, end]])
+str.count(substr[, start[, end]])
 str.encode(encoding='utf-8', errors='strict')
 str.endswith(suffix[, start[, end]])
 str.expandtabs(tabsize=8)
-#str.find(substr[, start[, end]])
+str.find(substr[, start[, end]])
 str.format(*args, **kwargs)
     "The sum of 1 + 2 is {0}, not {1}".format(1+2, 2+2)
 str.format_map(mapping)
-#str.index(substr[, start[, end]])
+str.index(substr[, start[, end]])
 str.isalnum()
 str.isalpha()
 str.isascii()

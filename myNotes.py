@@ -13,17 +13,20 @@ Comment2
 
 #Comment3
 
-"""
-[print function]
-    --> print("your string here")
-    --> print('another string')
-    --> print("""
-    multi
-    line
-    string""")
-"""
+# """ 
+# [print function]
+#     --> print("your string here")
+#     --> print('another string')
+#     --> print("""
+#     multi
+#     line
+#     string""")
+# """
+
+# import os modules,  os names: /// 'nt' == 'windows' /// 'posix' == 'linux/macos' ///
 
 #########################################################
+
 import sys
 import pygame
 import random
