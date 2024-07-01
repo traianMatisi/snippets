@@ -41,3 +41,10 @@ else:
 
 # TODO: print("Block nested")
 # A good exercise is to make this snippet with nested if/else
+
+# old solution - 2021
+# anoInput = float(input('Digite um ano qualquer: '))
+# biss1 = int(anoInput % 4)
+# biss2 = int(anoInput % 400)
+# biss3 = int(anoInput % 100)
+# print('É ano bissexto.') if biss1 == 0 and biss3 != 0 or biss2 == 0 else print('Não é ano bissexto')
